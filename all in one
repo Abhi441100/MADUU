@@ -1,0 +1,124 @@
+Practical 6: Break and Continue
+Program:
+fun main() {
+for (i in 1..5) {
+if (i == 3) continue if (i == 5) break println(i)
+}
+}
+Output:
+1
+2
+4
+
+
+Practical 7: Class and Object
+Program:
+class Student { fun show() {
+println("Student class method executed")
+}
+} 
+fun main() {
+val obj = Student() obj.show()
+}
+Output:
+Student class method executed
+
+
+Practical 8: Constructor
+Program:
+class Person(name: String) { init {
+println("Name: $name")
+}
+}
+fun main() { Person("Ajay")
+}
+Output:
+Name: Ajay
+
+
+Practical 9: Inheritance
+Program:
+open class Parent { fun display() {
+println("This is Parent class")
+}
+}
+class Child : Parent() fun main() {
+val obj = Child() obj.display()
+}
+Output:
+This is Parent class
+
+
+Practical 10: Immutable Collections
+Program:
+fun main() {
+val list = listOf(1, 2, 3)
+val set = setOf(4, 5, 6)
+val map = mapOf(1 to "One", 2 to "Two") println(list)
+println(set)
+println(map)
+}
+Output:
+[1, 2, 3]
+[4, 5, 6]
+{1=One, 2=Two}
+
+
+Practical 11: Mutable Collections
+Program:
+fun main() {
+val list = mutableListOf(1, 2) list.add(3)
+val set = mutableSetOf(4, 5) set.add(6)
+val map = mutableMapOf(1 to "A") map[2] = "B"
+println(list) println(set) println(map)
+}
+Output:
+[1, 2, 3]
+[4, 5, 6]
+{1=A, 2=B}
+
+
+Practical 12: Ranges
+Program:
+fun main() {
+for (i in 1..5) print("$i ") println()
+for (i in 1.rangeTo(5)) print("$i ") println()
+for (i in 5 downTo 1) print("$i ") println()
+for (i in 1..10 step 2) print("$i ")
+}
+Output:
+1 2 3 4 5
+1 2 3 4 5
+5 4 3 2 1
+1 3 5 7 9
+
+
+Practical 13: Simple Activity
+Program:
+class MainActivity : AppCompatActivity() {
+override fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanceState)
+setContentView(R.layout.activity_main)
+}
+}
+Output:
+Application launched
+
+
+Practical 14: Activity Lifecycle
+Program:
+override fun onStart() { super.onStart() println("onStart called")
+}
+override fun onResume() { super.onResume() println("onResume called")
+}
+Output:
+onStart called onResume called
+
+
+Practical 15: XML Layout
+Program:
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hello Android"/>
+</LinearLayout>
+Output:
+Hello Android displayed
