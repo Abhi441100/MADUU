@@ -1,0 +1,8 @@
+Program:
+override fun onStart() { super.onStart() println("onStart called")
+}
+
+override fun onResume() { super.onResume() println("onResume called")
+}
+Output:
+onStart called onResume called
