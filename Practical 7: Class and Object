@@ -1,0 +1,10 @@
+Program:
+class Student { fun show() {
+println("Student class method executed")
+}
+} 
+fun main() {
+val obj = Student() obj.show()
+}
+Output:
+Student class method executed
