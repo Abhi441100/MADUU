@@ -1,0 +1,10 @@
+Program:
+open class Parent { fun display() {
+println("This is Parent class")
+}
+}
+class Child : Parent() fun main() {
+val obj = Child() obj.display()
+}
+Output:
+This is Parent class
