@@ -1,0 +1,10 @@
+Program:
+class Person(name: String) { init {
+println("Name: $name")
+}
+}
+
+fun main() { Person("Ajay")
+}
+Output:
+Name: Ajay
